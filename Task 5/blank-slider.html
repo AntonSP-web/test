@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    img {
+      display: block;
+    }
+    h2 {
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .main {
+      background-color: black;
+      margin: 50px auto 0;
+      position: relative;
+    }
+    .image {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .picture {
+      position: relative;
+    }
+    .text-block {
+      position: absolute;
+      text-align: center;
+      top: 100px;
+      left: 390px;
+    }
+    h1 {
+      text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+      letter-spacing: 2px;
+    }
+    h3 {
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+    }
+    .square {
+      list-style-type: none;
+      color: white;
+      width: 100%;
+      text-align: center;
+      padding-left: 0px;
+      position: absolute;
+      bottom: 10px;
+    }
+    li {
+      margin: 10px;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .clearfix {
+      clear: both;
+    }
+    .left-arrow {
+      background: url(prev-next-sprite.png) 40px 180px no-repeat;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 80px;
+      cursor: pointer;
+    }
+    .arrows {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    .right-arrow {
+      background: url(prev-next-sprite.png) -30px 180px no-repeat;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 80px;
+      cursor: pointer;
+    }
+    .slider {
+      height: 20px;
+      width: 20px;
+      background-color: white;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .active {
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <h2>Верстка заготовки для слайдера</h2>
+  <div class="main">
+    <div class="image">
+      <div class="picture">
+        <img src="slider.jpg" alt="basketball girls" width="1200" height="425">
+        <div class="text-block">
+          <h1>Комфортная одежда</h1>
+          <h3>для всех видов спорта</h3>
+        </div>
+      </div>
+      <div class="arrows">
+        <a href="#" class="left-arrow"></a>
+        <a href="#" class="right-arrow"></a>
+      </div>
+        <ul class="square">
+          <li><a href="#" class="slider active"></a></li>
+          <li><a href="#" class="slider"></a></li>
+          <li><a href="#" class="slider"></a></li>
+          <li><a href="#" class="slider"></a></li>
+        </ul>
+    </div>
+  </div>
+</body>
+</html>

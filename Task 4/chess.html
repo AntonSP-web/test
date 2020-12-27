@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: cyan;
+    }
+    h1 {
+      text-align: center;
+    }
+    table {
+      background-color: white;
+      border-collapse: collapse;
+      margin: 25px auto 0;
+      font-weight: bold;
+      min-width: 435px;
+    }
+    .top-border {
+      border-top: 2px solid black;
+    }
+    .left-border {
+      border-left: 2px solid black;
+    }
+    tr {
+      height: 48px;
+      text-align: center;
+    }
+    .first-row {
+      height: 24px;
+      border-top: 2px solid black;
+    }
+    .last-row {
+      height: 24px;
+      border-bottom: 2px solid black;
+    }
+    col {
+      width: 48px;
+    }
+    .first-col {
+      width: 24px;
+      border-left: 2px solid black;
+      border-top: 2px solid black;
+    }
+    .last-col {
+      width: 24px;
+      border-right: 2px solid black;
+    }
+    .king-black {
+      background: url(chess.png) 0 0 no-repeat;
+    }
+    .queen-black {
+      background: url(chess.png) -48px 0 no-repeat;
+    }
+    .castle-black {
+      background: url(chess.png) -96px 0 no-repeat;
+    }
+    .bishop-black {
+      background: url(chess.png) -144px 0 no-repeat;
+    }
+    .knight-black {
+      background: url(chess.png) -192px 0 no-repeat;
+    }
+    .pawn-black {
+      background: url(chess.png) -240px 0 no-repeat;
+    }
+    .king-white {
+      background: url(chess.png) 0 -48px no-repeat;
+    }
+    .queen-white {
+      background: url(chess.png) -48px -48px no-repeat;
+    }
+    .castle-white {
+      background: url(chess.png) -96px -48px no-repeat;
+    }
+    .bishop-white {
+      background: url(chess.png) -144px -48px no-repeat;
+    }
+    .knight-white {
+      background: url(chess.png) -192px -48px no-repeat;
+    }
+    .pawn-white {
+      background: url(chess.png) -240px -48px no-repeat;
+    }
+    .blackfield {
+      background-color: rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Шахматы</h1>
+  <table>
+    <colgroup>
+      <col class="first-col">
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col class="last-col">
+    </colgroup>
+    <tr class="first-row">
+      <td></td>
+      <td>a</td>
+      <td>b</td>
+      <td>c</td>
+      <td>d</td>
+      <td>e</td>
+      <td>f</td>
+      <td>g</td>
+      <td>h</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td class="top-border left-border castle-black"></td>
+      <td class="blackfield top-border knight-black"></td>
+      <td class="top-border bishop-black"></td>
+      <td class="blackfield top-border queen-black"></td>
+      <td class="top-border king-black"></td>
+      <td class="blackfield top-border bishop-black"></td>
+      <td class="top-border knight-black"></td>
+      <td class="blackfield top-border castle-black"></td>
+      <td class="left-border">8</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td class="blackfield left-border pawn-black"></td>
+      <td class="pawn-black"></td>
+      <td class="blackfield pawn-black"></td>
+      <td class="pawn-black"></td>
+      <td class="blackfield pawn-black"></td>
+      <td class="pawn-black"></td>
+      <td class="blackfield pawn-black"></td>
+      <td class="pawn-black"></td>
+      <td class="left-border">7</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td class="left-border"></td>
+      <td class="blackfield"></td>
+      <td></td>
+      <td class="blackfield"></td>
+      <td></td>
+      <td class="blackfield"></td>
+      <td></td>
+      <td class="blackfield"></td>
+      <td class="left-border">6</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td class="blackfield left-border"></td>
+      <td></td>
+      <td class="blackfield"></td>
+      <td></td>
+      <td class="blackfield"></td>
+      <td></td>
+      <td class="blackfield"></td>
+      <td></td>
+      <td  class="left-border">5</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td class="left-border"></td>
+      <td class="blackfield"></td>
+      <td></td>
+      <td class="blackfield"></td>
+      <td></td>
+      <td class="blackfield"></td>
+      <td></td>
+      <td class="blackfield"></td>
+      <td class="left-border">4</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td class="blackfield left-border"></td>
+      <td></td>
+      <td class="blackfield"></td>
+      <td></td>
+      <td class="blackfield"></td>
+      <td></td>
+      <td class="blackfield"></td>
+      <td></td>
+      <td class="left-border">3</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td class="left-border pawn-white"></td>
+      <td class="blackfield pawn-white"></td>
+      <td class="pawn-white"></td>
+      <td class="blackfield pawn-white"></td>
+      <td class="pawn-white"></td>
+      <td class="blackfield pawn-white"></td>
+      <td class="pawn-white"></td>
+      <td class="blackfield pawn-white"></td>
+      <td class="left-border">2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td class="blackfield left-border castle-white"></td>
+      <td class="knight-white"></td>
+      <td class="blackfield bishop-white"></td>
+      <td class="queen-white"></td>
+      <td class="blackfield king-white"></td>
+      <td class="bishop-white"></td>
+      <td class="blackfield knight-white"></td>
+      <td class="castle-white"></td>
+      <td class="left-border">1</td>
+    </tr>
+    <tr class="last-row">
+      <td></td>
+      <td class="top-border">a</td>
+      <td class="top-border">b</td>
+      <td class="top-border">c</td>
+      <td class="top-border">d</td>
+      <td class="top-border">e</td>
+      <td class="top-border">f</td>
+      <td class="top-border">g</td>
+      <td class="top-border">h</td>
+      <td></td>
+    </tr>
+  </table>
+</body>
+</html>

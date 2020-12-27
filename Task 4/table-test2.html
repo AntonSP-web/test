@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .table-pattern {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    .table-pattern thead {
+      background-color: #888;
+      color: #fff;
+      border: 2px solid blue;
+    }
+    .table-pattern th {
+      padding: 5px;
+    }
+    .table-pattern tbody {
+      border: 2px solid blue;
+    }
+    .table-pattern td {
+      border: 2px solid blue;
+      padding: 5px;
+    }
+    .subtotal {
+      text-align: right;
+    }
+    .cell {
+      text-align: center;
+    }
+    .square {
+      margin: 100px auto;
+      border-collapse: collapse;
+    }
+    .square td {
+      width: 20px;
+      height: 20px;
+    }
+    .color-one {
+      background-color: red;
+    }
+    .color-two {
+      background-color: #7fff00;
+    }
+    .ornament {
+      margin: 100px auto;
+      border-collapse: collapse;
+    }
+    .ornament td {
+      width: 20px;
+      height: 20px;
+    }
+    .color-three {
+      background-color: #ff1493;
+    }
+    .color-four {
+      background-color: #ee82ee;
+    }
+    .color-five {
+      background-color: #ff69b4;
+    }
+    .color-six {
+      background-color: #ffb6c1;
+    }
+    .color-seven {
+      background-color: #228022;
+    }
+    .color-eight {
+      background-color: #3cb371;
+    }
+    .color-nine {
+      background-color: #32cd32;
+    }
+    .color-ten {
+      background-color: #00ff00;
+    }
+    .tree {
+      margin: 100px auto;
+      border-collapse: collapse;
+    }
+    col {
+      width: 20px;
+    }
+    .color-eleven {
+      background-color: black;
+    }
+    .tree td {
+      width: 20px;
+      height: 20px;
+    }
+    .color-twelve {
+      background-color: #8b4513;
+    }
+    .color-thirteen {
+      background-color: #b8860b;
+    }
+  </style>
+</head>
+<body>
+  <table class="table-pattern">
+    <h1>Пример сложной таблицы</h1>
+    <thead>
+      <tr>
+        <th>Название1</th>
+        <th>Название2</th>
+        <th>Еще название</th>
+        <th>Куча элементов</th>
+        <th>Список1</th>
+        <th>Список2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="11">JPMC</td>
+        <td rowspan="5">CST</td>
+        <td rowspan="3">CT</td>
+        <td>ADS</td>
+        <td class="cell">1</td>
+        <td class="cell"style="text-align: center;">10</td>
+      </tr>
+      <tr>
+        <td>BTO</td>
+        <td class="cell">2</td>
+        <td class="cell">15</td>
+      </tr>
+      <tr>
+        <td>CSI</td>
+        <td class="cell">3</td>
+        <td class="cell">16</td>
+      </tr>
+      <tr>
+        <td class="cell" rowspan="2">VCT</td>
+        <td>ADS</td>
+        <td class="cell">4</td>
+        <td class="cell">10</td>
+      </tr>
+      <tr>
+        <td>BTO</td>
+        <td class="cell">5</td>
+        <td class="cell">15</td>
+      </tr>
+      <tr>
+        <td class="subtotal" colspan="3">Sub total</td>
+        <td class="cell">6</td>
+        <td class="cell">15</td>
+      </tr>
+      <tr>
+        <td rowspan="4">CST</td>
+        <td rowspan="3">CT</td>
+        <td>ADS</td>
+        <td class="cell">7</td>
+        <td class="cell">10</td>
+      </tr>
+      <tr>
+        <td>BTO</td>
+        <td class="cell">8</td>
+        <td class="cell">15</td>
+      </tr>
+      <tr>
+        <td>CSI</td>
+        <td class="cell" style=" text-align: center;">9</td>
+        <td class="cell">16</td>
+      </tr>
+      <tr>
+        <td class="cell">VCT</td>
+        <td>ADS</td>
+        <td class="cell">10</td>
+        <td class="cell">10</td>
+      </tr>
+      <tr>
+        <td class="subtotal" colspan="3">Sub total</td>
+        <td class="cell">11</td>
+        <td class="cell">15</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="square">
+    <tbody>
+      <tr>
+        <td class="color-one"></td>
+        <td></td>
+        <td class="color-one"></td>
+        <td class="color-two"></td>
+        <td class="color-one"></td>
+        <td></td>
+        <td class="color-one"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="color-one"></td>
+        <td class="color-two"></td>
+        <td></td>
+        <td class="color-two"></td>
+        <td class="color-one"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="color-one"></td>
+        <td class="color-two"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="color-two"></td>
+        <td class="color-one"></td>
+      </tr>
+      <tr>
+        <td class="color-two"></td>
+        <td></td>
+        <td></td>
+        <td class="color-one"></td>
+        <td></td>
+        <td></td>
+        <td class="color-two"></td>
+      </tr>
+      <tr>
+        <td class="color-one"></td>
+        <td class="color-two"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="color-two"></td>
+        <td class="color-one"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="color-one"></td>
+        <td class="color-two"></td>
+        <td></td>
+        <td class="color-two"></td>
+        <td class="color-one"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="color-one"></td>
+        <td></td>
+        <td class="color-one"></td>
+        <td class="color-two"></td>
+        <td class="color-one"></td>
+        <td></td>
+        <td class="color-one"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="ornament">
+    <tbody>
+      <tr>
+        <td colspan="3"></td>
+        <td class="color-three"></td>
+        <td colspan="7"></td>
+        <td class="color-seven"></td>
+        <td colspan="7"></td>
+        <td class="color-three"></td>
+        <td colspan="3"></td>
+      </tr>
+      <tr>
+        <td colspan="2"></td>
+        <td class="color-three"></td>
+        <td class="color-four"></td>
+        <td class="color-three"></td>
+        <td colspan="5"></td>
+        <td class="color-seven"></td>
+        <td class="color-eight"></td>
+        <td class="color-seven"></td>
+        <td colspan="5"></td>
+        <td class="color-three"></td>
+        <td class="color-four"></td>
+        <td class="color-three"></td>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="color-three"></td>
+        <td class="color-four"></td>
+        <td class="color-five"></td>
+        <td class="color-four"></td>
+        <td class="color-three"></td>
+        <td colspan="3"></td>
+        <td class="color-seven"></td>
+        <td class="color-eight"></td>
+        <td class="color-nine"></td>
+        <td class="color-eight"></td>
+        <td class="color-seven"></td>
+        <td colspan="3"></td>
+        <td class="color-three"></td>
+        <td class="color-four"></td>
+        <td class="color-five"></td>
+        <td class="color-four"></td>
+        <td class="color-three"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="color-three"></td>
+        <td class="color-four"></td>
+        <td class="color-five"></td>
+        <td class="color-six"></td>
+        <td class="color-five"></td>
+        <td class="color-four"></td>
+        <td class="color-three"></td>
+        <td></td>
+        <td class="color-seven"></td>
+        <td class="color-eight"></td>
+        <td class="color-nine"></td>
+        <td class="color-ten"></td>
+        <td class="color-nine"></td>
+        <td class="color-eight"></td>
+        <td class="color-seven"></td>
+        <td></td>
+        <td class="color-three"></td>
+        <td class="color-four"></td>
+        <td class="color-five"></td>
+        <td class="color-six"></td>
+        <td class="color-five"></td>
+        <td class="color-four"></td>
+        <td class="color-three"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="color-three"></td>
+        <td class="color-four"></td>
+        <td class="color-five"></td>
+        <td class="color-four"></td>
+        <td class="color-three"></td>
+        <td colspan="3"></td>
+        <td class="color-seven"></td>
+        <td class="color-eight"></td>
+        <td class="color-nine"></td>
+        <td class="color-eight"></td>
+        <td class="color-seven"></td>
+        <td colspan="3"></td>
+        <td class="color-three"></td>
+        <td class="color-four"></td>
+        <td class="color-five"></td>
+        <td class="color-four"></td>
+        <td class="color-three"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="2"></td>
+        <td class="color-three"></td>
+        <td class="color-four"></td>
+        <td class="color-three"></td>
+        <td colspan="5"></td>
+        <td class="color-seven"></td>
+        <td class="color-eight"></td>
+        <td class="color-seven"></td>
+        <td colspan="5"></td>
+        <td class="color-three"></td>
+        <td class="color-four"></td>
+        <td class="color-three"></td>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <td colspan="3"></td>
+        <td class="color-three"></td>
+        <td colspan="7"></td>
+        <td class="color-seven"></td>
+        <td colspan="7"></td>
+        <td class="color-three"></td>
+        <td colspan="3"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="tree">
+    <tbody>
+      <colgroup>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+      </colgroup>
+      <tr>
+        <td class="color-eleven" colspan="5"></td>
+        <td class="color-seven"></td>
+        <td class="color-eleven" colspan="5"></td>
+      </tr>
+      <tr>
+        <td class="color-eleven" colspan="4"></td>
+        <td class="color-eight" colspan="3"></td>
+        <td class="color-eleven" colspan="4"></td>
+      </tr>
+      <tr>
+        <td class="color-eleven" colspan="3"></td>
+        <td class="color-nine" colspan="5"></td>
+        <td class="color-eleven" colspan="3"></td>
+      </tr>
+      <tr>
+        <td class="color-eleven" colspan="2"></td>
+        <td class="color-ten" colspan="7"></td>
+        <td class="color-eleven" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="color-eleven" colspan="4"></td>
+        <td class="color-seven" colspan="3"></td>
+        <td class="color-eleven" colspan="4"></td>
+      </tr>
+      <tr>
+        <td class="color-eleven" colspan="3"></td>
+        <td class="color-eight" colspan="5"></td>
+        <td class="color-eleven" colspan="3"></td>
+      </tr>
+      <tr>
+        <td class="color-eleven" colspan="2"></td>
+        <td class="color-nine" colspan="7"></td>
+        <td class="color-eleven" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="color-eleven"></td>
+        <td class="color-ten" colspan="9"></td>
+        <td class="color-eleven"></td>
+      </tr>
+      <tr>
+        <td class="color-eleven" colspan="3"></td>
+        <td class="color-seven" colspan="5"></td>
+        <td class="color-eleven" colspan="3"></td>
+      </tr>
+      <tr>
+        <td class="color-eleven" colspan="2"></td>
+        <td class="color-eight" colspan="7"></td>
+        <td class="color-eleven" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="color-eleven"></td>
+        <td class="color-nine" colspan="9"></td>
+        <td class="color-eleven"></td>
+      </tr>
+      <tr>
+        <td class="color-ten" colspan="11"></td>
+      </tr>
+      <tr>
+        <td class="color-eleven" colspan="4"></td>
+        <td class="color-twelve"></td>
+        <td class="color-thirteen"></td>
+        <td class="color-twelve"></td>
+        <td class="color-eleven" colspan="4"></td>
+      </tr>
+      <tr>
+        <td class="color-eleven" colspan="4"></td>
+        <td class="color-twelve"></td>
+        <td class="color-thirteen"></td>
+        <td class="color-twelve"></td>
+        <td class="color-eleven" colspan="4"></td>
+      </tr>
+      <tr>
+        <td class="color-eleven" colspan="4"></td>
+        <td class="color-twelve"></td>
+        <td class="color-thirteen"></td>
+        <td class="color-twelve"></td>
+        <td class="color-eleven" colspan="4"></td>
+      </tr>
+      <tr>
+        <td class="color-eleven" colspan="4"></td>
+        <td class="color-twelve"></td>
+        <td class="color-thirteen"></td>
+        <td class="color-twelve"></td>
+        <td class="color-eleven" colspan="4"></td>
+      </tr>
+      <tr>
+        <td class="color-eleven" colspan="4"></td>
+        <td class="color-twelve"></td>
+        <td class="color-thirteen"></td>
+        <td class="color-twelve"></td>
+        <td class="color-eleven" colspan="4"></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

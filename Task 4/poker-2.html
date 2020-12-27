@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: #00ffff;
+    }
+    .vertical-left {
+      background: white url(vertical.jpg) 0 0 repeat-y;
+    }
+    .vertical-right {
+      background: url(vertical.jpg) 100% 0 repeat-y;
+    }
+    .horizontal-top {
+      background: url(horizontal.jpg) 0 0 repeat-x;
+    }
+    .horizontal-bottom {
+      background: url(horizontal.jpg) 0 100% repeat-x;
+    }
+    .top-left-tracery {
+      background: url(top-left.jpg) 0 0 no-repeat;
+    }
+    .top-right-tracery {
+      background: url(top-right.jpg) 100% 0 no-repeat;
+    }
+    .bottom-right-tracery {
+      background: url(bottom-right.jpg) 100% 100% no-repeat;
+    }
+    .bottom-left-tracery {
+      background: url(bottom-left.jpg) bottom left no-repeat;
+    }
+    .game-description {
+      padding: 80px;
+    }
+    .poker-street {
+      border: 2px solid green;
+      padding: 20px;
+    }
+    .cards {
+      width: 140px;
+      height: 190px;
+      display: inline-block;
+      background: white url(cards.png) no-repeat;
+    }
+    .ace-spades {
+      background-position: 0 -2328px;
+    }
+    .king-club {
+      background-position: -144px -2134px;
+    }
+    .queen-diamond {
+      background-position: -288px -1940px;
+    }
+    .jack-heart {
+      background-position: -432px -1746px;
+    }
+    .ten-club {
+      background-position: -144px -1552px;
+    }
+  </style>
+</head>
+<body>
+  <div class="vertical-left">
+    <div class="vertical-right">
+      <div class="horizontal-top">
+        <div class="horizontal-bottom">
+         <div class="top-left-tracery">
+          <div class="top-right-tracery">
+            <div class="bottom-right-tracery">
+              <div class="bottom-left-tracery">
+                <div class="game-description">
+                  <h1>Покер</h1>
+                  <p><b>По́кер</b> (англ. poker) — карточная игра, цель которой — выиграть ставки, собрав как можно более высокую покерную комбинацию, используя 4 (старый классический вариант), или 5 карт, или вынудив всех соперников прекратить участвовать в игре. Игра идёт с полностью или частично закрытыми картами. Конкретные правила могут варьироваться в зависимости от разновидности покера. Обобщающими элементами всех разновидностей покера являются комбинации и наличие торговли в процессе игры.
+                  </p>
+                  <p>Ввиду того, что игрок не знает карты своих противников, покер является игрой с неполной информацией, как и многие другие карточные игры, в отличие от, например, шахмат, в которых оба игрока видят положение всех фигур на доске.
+                  </p>
+                  <h2>Комбинация в покере — стрит</h2>
+                  <div class="poker-street">
+                    <div class="cards ace-spades"></div>
+                    <div class="cards king-club"></div>
+                    <div class="cards queen-diamond"></div>
+                    <div class="cards jack-heart"></div>
+                    <div class="cards ten-club"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

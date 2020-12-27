@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>TASK: css chess</title>
+  <style>
+
+    body {
+      margin: 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      margin: 100px auto;
+      border-color:  #b4b4b4;
+    }
+
+    table td {
+      width: 50px;
+      height: 50px;
+      border: 1px solid gray;
+    }
+    tr:nth-child(even) td:nth-child(odd) {
+      background-color: black;
+    }
+    tr:nth-child(odd) td:nth-child(even) {
+      background-color: black;
+    }
+    .chess tr td:first-child,
+    .chess tr td:last-child {
+      background-color: #90ee90;
+      width: 20px;
+    }
+    .chess tr:first-child td,
+    .chess tr:last-child td{
+      background-color: #90ee90;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <table class="chess">
+    <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+  </table>
+
+</body>
+</html>
